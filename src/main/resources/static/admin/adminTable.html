@@ -1,0 +1,46 @@
+<div class="container mt-4">
+    <h2>Страничка Админа</h2>
+    <div class="card mt-4">
+        <div class="card-header">
+            <ul class="nav nav-tabs card-header-tabs" id="myTab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" id="users-tab" data-bs-toggle="tab" href="#users" role="tab"
+                       aria-controls="users" aria-selected="true">Users table</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="new-user-tab" data-bs-toggle="tab" href="#new-user" role="tab"
+                       aria-controls="new-user" aria-selected="false">New User</a>
+                </li>
+            </ul>
+        </div>
+        <div class="card-body tab-content">
+            <div class="tab-pane fade show active" id="users" role="tabpanel" aria-labelledby="users-tab">
+                <h4>Users</h4>
+                <table class="table table-striped">
+                    <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Age</th>
+                        <th>Email</th>
+                        <th>Role</th>
+                        <th>Edit</th>
+                        <th>Delete</th>
+                    </tr>
+                    </thead>
+                    <tbody id="adminTableBody">
+
+                    </tbody>
+                </table>
+            </div>
+
+<!--            Вкладка нового пользователя -->
+            <div class="tab-pane fade" id="new-user" role="tabpanel" aria-labelledby="new-user-tab">
+                <div class="card-body" id="newFormBody">
+<!--                    Форма нового пользователя-->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

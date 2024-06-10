@@ -1,0 +1,47 @@
+<div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="editModalLabel">Edit user</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label for="firstName" class="label-center">First name</label>
+                    <input type="text" class="form-control custom-size" id="firstName" name="firstName" required placeholder="First name" minlength="2" maxlength="30">
+                </div>
+                <div class="form-group">
+                    <label for="lastName" class="label-center">Last name</label>
+                    <input type="text" class="form-control custom-size" id="lastName" name="lastName" required placeholder="Last name" minlength="2" maxlength="30">
+                </div>
+                <div class="form-group">
+                    <label for="age" class="label-center">Age</label>
+                    <input type="number" class="form-control custom-size" id="age" name="age" required placeholder="Age" min="18" max="200">
+                </div>
+                <div class="form-group">
+                    <label for="email" class="label-center">Email</label>
+                    <input type="email" class="form-control custom-size" id="email" name="email" required placeholder="Email">
+                </div>
+                <div class="form-group">
+                    <label for="password" class="label-center">Password</label>
+                    <input type="password" class="form-control custom-size" id="password" name="password" required placeholder="Password">
+                </div>
+                <div class="form-group">
+                    <label class="label-center">Role</label>
+                    <div class="form-control custom-size">
+                        <div class="checkbox">
+                            <label><input type="checkbox" name="roles" value="ADMIN"> ADMIN</label>
+                        </div>
+                        <div class="checkbox">
+                            <label><input type="checkbox" name="roles" value="USER"> USER</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" id="confirmEditBtn">Save</button>
+            </div>
+        </div>
+    </div>
+</div>

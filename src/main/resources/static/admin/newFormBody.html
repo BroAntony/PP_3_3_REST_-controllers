@@ -1,0 +1,54 @@
+<h4>Add new user</h4>
+<form id="newUserForm" method="post">
+    <div class="form-group">
+        <label for="newFirstName" class="label-center">First name</label>
+        <input type="text" class="form-control custom-size" id="newFirstName" name="firstName"
+               required placeholder="First name" minlength="2" maxlength="30">
+    </div>
+    <div class="form-group">
+        <label for="newLastName" class="label-center">Last name</label>
+        <input type="text" class="form-control custom-size" id="newLastName" name="lastName"
+               required placeholder="Last name" minlength="2" maxlength="30">
+    </div>
+    <div class="form-group">
+        <label for="newAge" class="label-center">Age</label>
+        <input type="number" class="form-control custom-size" id="newAge" name="age"
+               required placeholder="Age" min="18" max="200">
+    </div>
+    <div class="form-group">
+        <label for="newEmail" class="label-center">Email</label>
+        <input type="email" class="form-control custom-size" id="newEmail" name="email"
+               required placeholder="Email">
+    </div>
+    <div class="form-group">
+        <label for="newPassword" class="label-center">Password</label>
+        <input type="password" class="form-control custom-size" id="newPassword" name="password"
+               required placeholder="Password">
+    </div>
+    <div class="form-group">
+        <label class="label-center">Role</label>
+        <div class="form-control custom-size">
+            <div class="role-list">
+                <div class="role-item">
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" name="newroles" value="ADMIN">
+                            <span>ADMIN</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="role-item">
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" name="newroles" value="USER">
+                            <span>USER</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="button-container">
+        <button type="submit" class="btn btn-success">Add new user</button>
+    </div>
+</form>

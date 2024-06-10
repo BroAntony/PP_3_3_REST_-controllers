@@ -1,0 +1,44 @@
+<div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="deleteModalLabel">Delete user</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label for="firstName" class="label-center">First name</label>
+                    <input type="text" class="form-control custom-size" id="firstName" name="firstName" required placeholder="First name" minlength="2" maxlength="30">
+                </div>
+                <div class="form-group">
+                    <label for="lastName" class="label-center">Last name</label>
+                    <input type="text" class="form-control custom-size" id="lastName" name="lastName" required placeholder="Last name" minlength="2" maxlength="30">
+                </div>
+                <div class="form-group">
+                    <label for="age" class="label-center">Age</label>
+                    <input type="number" class="form-control custom-size" id="age" name="age" required placeholder="Age" min="18" max="200">
+                </div>
+                <div class="form-group">
+                    <label for="email" class="label-center">Email</label>
+                    <input type="email" class="form-control custom-size" id="email" name="email" required placeholder="Email">
+                </div>
+                <div class="form-group">
+                    <label class="label-center">Role</label>
+                    <div class="form-control custom-size disabled">
+                        <div class="checkbox">
+                            <label><input type="checkbox" name="roles" value="ADMIN" disabled> ADMIN</label>
+                        </div>
+                        <div class="checkbox">
+                            <label><input type="checkbox" name="roles" value="USER" disabled> USER</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-danger" id="confirmDeleteBtn">Delete</button>
+            </div>
+        </div>
+    </div>
+</div>
+

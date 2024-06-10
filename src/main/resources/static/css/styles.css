@@ -1,0 +1,76 @@
+.sidebar {
+    height: calc(100vh - 56px);
+    padding: 1rem;
+    background-color: #ffffff;
+    position: fixed;
+    top: 56px;
+    bottom: 0;
+    width: 150px;
+}
+
+.custom-size.disabled {
+    background-color: #e7eaed;
+    pointer-events: none;
+}
+
+.main-content {
+    margin-left: 150px;
+    padding: 1rem;
+    padding-top: 56px;
+    background-color: #f8f9fa;
+    min-height: 100vh;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.close-modal-link {
+    text-decoration: none;
+}
+
+.btn-secondary {
+    background-color: #cccccc;
+    color: white;
+}
+
+
+.nav-link.active {
+    background-color: blue;
+    color: white;
+}
+
+#deleteModal input, #deleteModal select {
+    pointer-events: none;
+    background-color: #e9ecef;
+}
+
+
+.label-center {
+    display: block;
+    text-align: center;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.label2-center {
+    display: block;
+
+    margin-bottom: 5px;
+    width: 300px;
+}
+
+.custom-size {
+    width: 300px;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.button-container {
+    text-align: center;
+}
